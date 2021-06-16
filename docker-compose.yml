@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "8080:8080"
+  mongo-db:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME:basheer
+      - MONGO_INITDB_ROOT_PASSWORD:mongopass
