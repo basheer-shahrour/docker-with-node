@@ -16,3 +16,7 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=basheer
       - MONGO_INITDB_ROOT_PASSWORD=mongopass
+    volumes:
+      - mongo-database:/data/db
+volumes:
+  - mongo-database
