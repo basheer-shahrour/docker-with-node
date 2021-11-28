@@ -19,4 +19,4 @@ services:
     volumes:
       - mongo-database:/data/db
 volumes:
-  - mongo-database
+  mongo-database: null
