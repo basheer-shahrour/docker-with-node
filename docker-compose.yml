@@ -9,10 +9,10 @@ services:
       - "8080:8080"
     environment:
       - PORT=8080
-      - NODE_ENV="production"
+      - NODE_ENV=production
     command: npm start
   mongo-db:
     image: mongo
     environment:
-      - MONGO_INITDB_ROOT_USERNAME:basheer
-      - MONGO_INITDB_ROOT_PASSWORD:mongopass
+      - MONGO_INITDB_ROOT_USERNAME=basheer
+      - MONGO_INITDB_ROOT_PASSWORD=mongopass
