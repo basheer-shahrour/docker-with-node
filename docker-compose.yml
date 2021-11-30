@@ -5,6 +5,7 @@ services:
       context: .
       args:
         NODE_ENV: production
+    image: basheershahrour/docker-with-node
     ports:
       - "8080:8080"
     environment:
